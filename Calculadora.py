@@ -13,18 +13,18 @@ while executando:
             imc = peso / (altura**2)
             print(f'\nIMC: {imc:.2f}')
             if imc < 18.5:
-                print('Magreza, abaixo do peso')
+                print('Magreza, abaixo do peso.')
             elif 18.5 <= imc < 25:
-                print('Normal, dentro do peso')
+                print('Normal, dentro do peso.')
             elif 25 <= imc < 30:
-                print('Sobrepeso, acima do peso')
+                print('Sobrepeso, acima do peso.')
             elif 30 <= imc < 35:
-                print('Obesidade, muito acima do peso')
+                print('Obesidade, muito acima do peso.')
             elif 35 <= imc < 40:
-                print('Obesidade mórbida, extremamente acima do peso')
+                print('Obesidade mórbida, extremamente acima do peso.')
             else:
-                print('Obesidade grave, fatalmente acima do peso')
+                print('Obesidade grave, fatalmente acima do peso.')
             executando = False
-    except ValueError as excecao:
-        print('Peso e altura devem ser númericos')
+    except ValueError:
+        print(f'Peso e altura devem ser númericos!')
 
